@@ -13,6 +13,7 @@ export default () => ({
   auth: {
     jwtSecret: process.env.JWT_SECRET,
     jwtExpiresIn: process.env.JWT_EXPIRES_IN,
+    saltRounds: process.env.BCRYPT_SALT_ROUNDS
   },
   web: {
     revalidateToken: process.env.REVALIDATE_TOKEN,

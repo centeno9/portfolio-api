@@ -15,4 +15,5 @@ export default joi.object({
 
   CONTENT_USER: joi.string().min(4).required(),
   CONTENT_PASSWORD: joi.string().min(6).required(),
+  BCRYPT_SALT_ROUNDS: joi.number().required(),
 });
